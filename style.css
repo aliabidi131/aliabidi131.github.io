@@ -1,0 +1,105 @@
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: linear-gradient(to right, #b5d4f0, #01f2ee);
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #001263;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.navbar {
+    padding: 10px 0;
+    margin-bottom: 90px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    display: inline-block;
+    padding: 10px 4px;
+    text-decoration: none;
+    background-color: #e7a900;
+    color: #2e0606;
+    font-size: 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ffffff;
+}
+
+.exercices-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.exercice {
+    background-color: #1c23ef;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exercice:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+h3 {
+    color: #090909;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #d8ca06;
+    color: #000000;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background: #ff1717;
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    .exercices-container {
+        grid-template-columns: 1fr;
+    }
+}
